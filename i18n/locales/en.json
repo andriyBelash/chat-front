@@ -1,0 +1,50 @@
+{
+  "error": {
+    "page_not_found": "Page not found",
+    "page_return_home": "Return to home",
+    "user_not_found": "User not found"
+  },
+  "site": {
+    "example": "Example",
+    "download": "Download"
+  },
+  "field": {
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "phone": "Phone",
+    "avatar": "Profile picture",
+    "username": "Username",
+    "dob": "Date of birth",
+    "sex": "Gender",
+    "sex_male": "Male",
+    "sex_female": "Female"
+  },
+  "page": {
+    "auth": {
+      "login_title": "Log in to ConvoHub",
+      "register": "Register",
+      "dont_have_account": "Don't have an account?",
+      "already_have_account": "Already have an account?",
+      "already_have_account_link": "Log in to ConvoHub",
+      "sign_up": "Sign up",
+      "sign_in": "Sign in",
+      "sign_out": "Sign out",
+      "to_register": "Register"
+    }
+  },
+  "validation": {
+    "required": "Field is required",
+    "email": "Invalid email",
+    "min_length": "Password must be at least {count} characters"
+  },
+  "profile": {
+    "profile_link": "Profile",
+    "settings_link": "Settings",
+    "friends_link": "Friends",
+    "posts_link": "Posts",
+    "chats_link": "Chats",
+    "likes_link": "Likes",
+    "logout_link": "Logout"
+  }
+}

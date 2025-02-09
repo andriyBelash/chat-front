@@ -1,0 +1,50 @@
+{
+  "error": {
+    "page_not_found": "Сторінка не знайдена",
+    "page_return_home": "Повернутися на головну",
+    "user_not_found": "Користувача не знайдено"
+  },
+  "site": {
+    "example": "Приклад",
+    "download": "Завантажити"
+  },
+  "field": {
+    "email": "Електронна пошта",
+    "password": "Пароль",
+    "name": "Ім'я",
+    "phone": "Телефон",
+    "avatar": "Фото профілю",
+    "username": "Нікнейм",
+    "dob": "Дата народження",
+    "sex": "Стать",
+    "sex_male": "Чоловік",
+    "sex_female": "Жінка"
+  },
+  "page": {
+    "auth": {
+      "login_title": "Увійти в ConvoHub",
+      "register": "Реєстрація",
+      "dont_have_account": "Немаєте аккаунту?",
+      "already_have_account": "Вже маєте аккаунт?",
+      "already_have_account_link": "Увійтідь в ConvoHub",
+      "sign_up": "Зареєструватися",
+      "sign_in": "Увійти",
+      "sign_out": "Вихід",
+      "to_register": "Зареєструйтесь"
+    }
+  },
+  "validation": {
+    "required": "Поле обов'язкове",
+    "email": "Неправильна електронна пошта",
+    "min_length": "Пароль повинен містити не менше {count} символів"
+  },
+  "profile": {
+    "profile_link": "Профіль",
+    "settings_link": "Налаштування",
+    "friends_link": "Друзі",
+    "posts_link": "Пости",
+    "chats_link": "Чати",
+    "likes_link": "Лайки",
+    "logout_link": "Вихід"
+  }
+}

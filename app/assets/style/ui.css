@@ -1,0 +1,70 @@
+.button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.button.dark-variant {
+  background-color: var(--dark-button);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 8px 16px;
+  color: var(--main-text);
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button.light-variant {
+  background-color: var(--light-button);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 8px 16px;
+  color: var(--dark-button);
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button.dark-variant:hover {
+  background-color: var(--dark-button-hover);
+}
+
+.button.light-variant:hover {
+  background-color: var(--light-button-hover);
+}
+
+.input{
+  border: 1px solid var(--border);
+  background-color: var(--dark-button-hover);
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+  color: var(--light-button);
+  width: 100%;
+  outline: none;
+}
+
+.input:focus{
+  border: 1px solid #ffffff5a;
+}
+
+.input:focus-visible{
+  border: 1px solid #ffffff5a;
+}
+
+
+.input.error{
+  border: 1px solid #ff00007a;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
