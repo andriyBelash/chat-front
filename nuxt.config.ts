@@ -2,6 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
 
+  runtimeConfig: {
+    public: {
+      BASE_URL: process.env.NUXT_PUBLIC_URL
+    }
+  },
+
   future: {
     compatibilityVersion: 4,
   },
@@ -38,7 +44,7 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['@nuxtjs/i18n', '@nuxt/image', '@nuxtjs/google-fonts'],
+  modules: ['@nuxtjs/i18n', '@nuxt/image', '@nuxtjs/google-fonts', '@pinia/nuxt'],
 
   i18n: {
     strategy: 'prefix_except_default',
@@ -54,5 +60,5 @@ export default defineNuxtConfig({
     families: {
       Inter: [400, 500, 700],
     }
-  }
+  },
 })
