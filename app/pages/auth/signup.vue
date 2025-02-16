@@ -15,7 +15,7 @@
     <img class="signup-image" src="~/public/images/signup.webp" />
     <div class="signup--card card">
       <div class="signup--card-header">
-        <p>
+        <p style="color: black">
           {{ t('page.auth.already_have_account') }} <NuxtLinkLocale class="text-link" to="/auth/login">{{ t('page.auth.already_have_account_link') }}</NuxtLinkLocale>
         </p>
       </div>
@@ -27,7 +27,7 @@
               <img v-if="image.url" :src="image.url" />
               <img v-else src="~/public/images/avatar.png" />
             </div>
-            <button type="button" class="button dark-variant" @click="imageRef?.click()">
+            <button type="button" class="button outlined-variant" @click="imageRef?.click()">
               {{ t('site.download') }}
             </button>
           </div>
@@ -50,7 +50,7 @@
         <BaseFieldContainer :label="t('field.password')">
           <input v-model="form.password" class="input" type="password" placeholder="********" />
         </BaseFieldContainer>
-        <button class="button light-variant" type="submit">
+        <button class="button filled-variant" type="submit">
           {{ t('page.auth.sign_up') }}
         </button>
       </form>

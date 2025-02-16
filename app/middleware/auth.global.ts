@@ -4,10 +4,10 @@ export default defineNuxtRouteMiddleware((to, from) => {
   const token = useCookie(ACCESS_TOKEN).value
   const localePath = useLocalePath()
 
-
-  const isPublicRoute = to.path === '/auth/login' || to.path === '/auth/register'
+  const isPublicRoute = to.path.includes('auth')
 
   if (!token && !isPublicRoute) {
+    console.log('redirect to login')
     return navigateTo(localePath('/auth/login'))
   }
 

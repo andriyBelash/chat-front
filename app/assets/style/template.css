@@ -1,4 +1,5 @@
 .card {
-  background-color: var(--dark-button-hover);
   border-radius: 8px;
+  
+  border: 1px solid var(--border);
 }

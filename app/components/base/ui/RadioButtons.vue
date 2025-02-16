@@ -45,6 +45,7 @@
   align-items: center;
   cursor: pointer;
   user-select: none;
+  color: black;
 }
 
 .radio-text {
@@ -53,6 +54,6 @@
 
 input[type="radio"] {
   cursor: pointer;
-  accent-color: var(--border);
+  accent-color: var(--blue);
 }
 </style>

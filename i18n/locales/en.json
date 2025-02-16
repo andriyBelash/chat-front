@@ -44,7 +44,6 @@
     "friends_link": "Friends",
     "posts_link": "Posts",
     "chats_link": "Chats",
-    "likes_link": "Likes",
-    "logout_link": "Logout"
+    "likes_link": "Liked posts"
   }
 }

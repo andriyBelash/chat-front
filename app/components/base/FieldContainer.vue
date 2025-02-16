@@ -4,7 +4,7 @@
 
 <template>
   <div :class="$style['field-container']">
-    <label>{{ props.label }}</label>
+    <label :class="$style['field-label']">{{ props.label }}</label>
     <div :class="$style.field">
       <slot/>
       <span v-if="error" :class="$style.error">{{ error }}</span>
@@ -23,6 +23,12 @@
     display: flex;
     flex-direction: column;
     gap: 2px;
+  }
+
+  .field-label{
+    font-weight: 500;
+    line-height: 15px;
+    color: black;
   }
 
   .error{

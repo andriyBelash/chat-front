@@ -10,7 +10,7 @@
   <header :class="$style.header">
     <div class="container" :class="$style.container">
       <NuxtLinkLocale class="text-link" to="/">
-        <img style="width: 50px; height: 50px; object-fit: contain;" width="50" height="50" src="~/public/logo.png" alt="logo"/>
+        <img style="width: 50px; height: 50px; object-fit: contain;" width="50" height="50" src="~/public/logo.svg" alt="logo"/>
       </NuxtLinkLocale>
       <div :class="$style['container--actions']">
         <template v-if="user">
@@ -82,7 +82,7 @@
 
   .user-info .name{
     font-weight: 500;
-    color: white;
+    color: black;
   }
 
   .user-info .email{

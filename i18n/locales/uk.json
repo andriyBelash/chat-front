@@ -44,7 +44,6 @@
     "friends_link": "Друзі",
     "posts_link": "Пости",
     "chats_link": "Чати",
-    "likes_link": "Лайки",
-    "logout_link": "Вихід"
+    "likes_link": "Вподобані пости"
   }
 }

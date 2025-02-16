@@ -1,5 +1,3 @@
 <script setup lang="ts"></script>
 
-<template>
-  profile
-</template>
+<template>posts</template>

@@ -26,7 +26,7 @@
   }
 
   .locale-link {
-    color: white
+    color: var(--blue);
   }
   .locale-link:hover {
     text-decoration: underline;

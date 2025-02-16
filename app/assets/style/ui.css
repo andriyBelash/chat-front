@@ -5,11 +5,14 @@
   justify-content: center;
   gap: 8px;
   cursor: pointer;
+  border: none;
+  background: transparent;
+  font-style: 500;
 }
 
-.button.dark-variant {
-  background-color: var(--dark-button);
-  border: 1px solid var(--border);
+.button.filled-variant {
+  background-color: var(--blue);
+  height: 40px;
   border-radius: 4px;
   padding: 8px 16px;
   color: var(--main-text);
@@ -18,25 +21,38 @@
   transition: all 0.2s ease-in-out;
 }
 
-.button.light-variant {
-  background-color: var(--light-button);
-  border: 1px solid var(--border);
+.button.outlined-variant {
+  background-color: white;
+  color: var(--blue);
+  border: 1px solid rgba(108, 159, 255, 1);
   border-radius: 4px;
   padding: 8px 16px;
-  color: var(--dark-button);
   font-weight: 500;
   font-size: 14px;
   transition: all 0.2s ease-in-out;
 }
 
-.button.dark-variant:hover {
-  background-color: var(--dark-button-hover);
+.button.filled-variant:hover {
+  background-color: #6C9FFF;
 }
 
-.button.light-variant:hover {
-  background-color: var(--light-button-hover);
+.button.filled-variant:active {
+  background-color: #1042A0;
 }
 
+.button.filled-variant:disabled {
+  background-color: #D9E1F0;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.button.outlined-variant:hover {
+  border: 1px solid rgba(16, 66, 160, 1);
+}
+
+.button.outlined-variant:active {
+  background: color-mix(in srgb, var(--blue) 10%, transparent);
+}
 .input{
   border: 1px solid var(--border);
   background-color: var(--dark-button-hover);
@@ -45,17 +61,20 @@
   font-weight: 500;
   font-size: 14px;
   transition: all 0.2s ease-in-out;
-  color: var(--light-button);
   width: 100%;
   outline: none;
+  font-size: 16px;
+  color: #000000
 }
 
 .input:focus{
-  border: 1px solid #ffffff5a;
+  border: 1px solid var(--blue);
+  box-shadow: 0px 0px 3px 0px var(--blue);
 }
 
 .input:focus-visible{
-  border: 1px solid #ffffff5a;
+  border: 1px solid var(--blue);
+  box-shadow: 0px 0px 3px 0px var(--blue);
 }
 
 

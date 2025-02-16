@@ -12,7 +12,7 @@
 <template>
   <div :class="$style.page">
     <div :class="$style['page-content']">
-      <h1>{{ t('page.auth.login_title') }}</h1>
+      <h1 :class="$style['page--title']">{{ t('page.auth.login_title') }}</h1>
       <div class="card" :class="$style['form-card']">
         <form @submit.prevent="login" :class="$style.form">
           <BaseFieldContainer :label="t('field.email')" >
@@ -21,7 +21,7 @@
           <BaseFieldContainer :label="t('field.password')">
             <input v-model="form.password" class="input" type="password" placeholder="********" />
           </BaseFieldContainer>
-          <button class="button light-variant" type="submit">
+          <button class="button filled-variant" type="submit">
             {{ t('page.auth.sign_in') }}
           </button>
         </form>
@@ -39,6 +39,12 @@
     justify-content: center;
     align-items: center;
     height: 100dvh;
+  }
+
+  .page--title{
+    color: #000;
+    font-weight: 500;
+    font-size: 24px
   }
 
   .page-content {
@@ -63,10 +69,11 @@
   .form-disclaimer{
     text-align: center;
     margin-top: 12px;
+    color: black;
   }
 
   .form-disclaimer-link {
-    color: color-mix(in srgb, var(--light-button) 50%, transparent);
+    color: var(--blue);
   }
 
   .form-disclaimer-link:hover{
