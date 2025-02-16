@@ -4,7 +4,7 @@ export const useUserServices = () => {
   const { $http } = useNuxtApp()
 
   const getUser = async () => {
-    return $http<{ user: IUser }>('/profile/me')
+    return $http<IUser>('/profile/me')
   }
 
   return { getUser }

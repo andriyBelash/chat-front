@@ -12,15 +12,19 @@ export const useUserStore = defineStore('user', () => {
 
   const getUser = async () => {
     const response = await services.getUser()
-    setUser(response.user)
-    console.log(response)
+    setUser(response)
     return response
+  }
+
+  const getUserFromStore = () => {
+    return user.value
   }
 
   return { 
     user,
     setUser,
-    getUser
+    getUser,
+    getUserFromStore
   }
 
 })

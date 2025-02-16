@@ -2,6 +2,7 @@
   import { Toaster } from 'vue-sonner'
   import { useUserStore } from "#imports"
   import '@/assets/style/global.css'
+  import { NuxtLayout } from '#components';
 
   const { getUser } = useUserStore()
 
@@ -11,7 +12,9 @@
 <template>
   <div class="app">
     <NuxtRouteAnnouncer />
-    <NuxtPage />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
     <Toaster :expand="true" :toast-props="{ duration: 3000, expand: true }" />
   </div>
 </template>
