@@ -2,6 +2,8 @@
   import type { NuxtError } from '#app'
 
   const props = defineProps<{ error: NuxtError }>()
+
+  definePageMeta({ layout: 'empty' })
 </script>
 
 <template>

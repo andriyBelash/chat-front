@@ -4,6 +4,8 @@
   const { t } = useI18n()
 
   const { form, login } = useLoginForm()
+
+  definePageMeta({ layout: 'empty' })
   
 </script>
 

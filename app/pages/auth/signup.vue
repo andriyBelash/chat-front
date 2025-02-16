@@ -7,7 +7,7 @@
 
   const { t } = useI18n()
 
-
+  definePageMeta({ layout: 'empty' })
 </script>
 
 <template>
